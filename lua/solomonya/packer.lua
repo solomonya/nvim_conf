@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use { 'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
     requires = {
@@ -29,6 +29,10 @@ return require('packer').startup(function(use)
     requires = {
       'nvim-tree/nvim-web-devicons', 
     },
+  }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
   
 end)
