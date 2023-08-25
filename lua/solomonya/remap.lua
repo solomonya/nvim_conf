@@ -7,5 +7,4 @@ vim.keymap.set("n", "<leader>q", vim.cmd.q)
 vim.keymap.set("n", "<leader>e", api.tree.toggle)
 vim.keymap.set("n", "<leader>o", api.tree.focus)
 vim.keymap.set("i", "jk", "<Esc>")
-vim.keymap.set("n", "<leader>tn", vim.cmd.tabnew)
-vim.keymap.set("n", "<leader>tc", vim.cmd.tabclose)
+
