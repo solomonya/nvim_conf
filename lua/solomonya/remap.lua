@@ -1,4 +1,6 @@
 local api = require("nvim-tree.api")
+local conform = require("conform")
+
 vim.o.clipboard = vim.o.clipboard .. "unnamedplus"
 
 vim.g.mapleader = " "
@@ -9,3 +11,6 @@ vim.keymap.set("n", "<leader>e", function()
 	api.tree.toggle({ find_file = true })
 end)
 vim.keymap.set("n", "<leader>o", api.tree.focus)
+vim.keymap.set("n", "<leader>f", function()
+	conform.format()
+end)
